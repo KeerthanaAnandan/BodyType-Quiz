@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="getresponse.css" />
+  </head>
+  <body style="margin:10px; background-color: #fff;">
+    <!--navbar
+    <nav id="navbar">
+      <h1 class="logo" >
+        <img src="Assets/logo.jpg" width="30%" />
+      </h1>
+    </nav>-->
+    <div class="footer-container" >
+     
+      
+      <!-- Begin Mailchimp Signup Form 
+      <link
+        href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+<div class="wrapthat">
+  <div class="card" data-aos="fade-up" data-aos-delay="200" > 
+      <div id="mc_embed_signup">
+        <form
+        action="https://karendubi.us12.list-manage.com/subscribe/post?u=27eb98cb63ff26628f4b4bf85&amp;id=990c8ef353"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <div>
+              <br>
+              <h2 style="color:rgb(95, 95, 95); font-size:large" class="texts">Great Job, You’ve Finished the Quiz!
+                </h2>
+              <br>
+             <p style="color: rgb(99, 98, 98);" class="texts">To get your results and a full report on how to improve in your areas of life, just let us know where to send it.</p>
+              <br>
+            </div>
+        <br>
+            <div class="mc-field-group">
+              <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+              <input type="text" value="" placeholder="First Name" name="FNAME" class="required" id="mce-FNAME" />
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-MMERGE2" id="userlabel">Last Name </label>
+              <input type="text" value="" name="MMERGE2" placeholder="Last Name" id="mce-MMERGE2">
+            </div>
+            <div class="mc-field-group">
+            
+              <label for="mce-EMAIL"
+                >Email<span class="asterisk">*</span>
+              </label>
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="required email"
+                id="mce-EMAIL"
+                placeholder="Enter email here..."
+              />
+            </div>
+           <div class="mc-field-group">
+              <label for="mce-MMERGE2">UserResult 
+            </label>
+              <input type="text" value="" name="MMERGE2"  id="mce-MMERGE2" id="usertype">
+            </div>
+            <div id="mce-responses" class="clear">
+              <div
+                class="response"
+                id="mce-error-response"
+                style="display: none"
+              ></div>
+              <div
+                class="response"
+                id="mce-success-response"
+                style="display: none"
+              ></div>
+            </div>
+           <div class="indicates-required">
+              <span class="asterisk">*</span> indicates required
+            </div>
+            real people should not fill this in and expect good things - do not remove this or risk form bot signups
+            <div style="position: absolute; left: -5000px" aria-hidden="true">
+              <input
+                type="text"
+                name="b_3a8d6f8f174409356f89b85f0_784412b43e"
+                tabindex="-1"
+                value=""
+              />
+              </div>
+            <div class="clear">
+              <input
+                type="submit"
+                value="See My Results"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="button"
+              />
+            </div>
+          </div>
+        </form>
+      </div>-->
+
+      <!--End mc_embed_signup-->
+<!------------------------get response----------------->
+<div class="wrapthat">
+  <div class="card" data-aos="fade-up" data-aos-delay="200" > 
+    <div>
+      <br>
+      <h2 style="color:rgb(95, 95, 95); font-size:large" class="texts">Great Job, You’ve Finished the Quiz!
+        </h2>
+      <br>
+     <p style="color: rgb(99, 98, 98);" class="texts">We will send you personalized info based on your results, just let us know where to send it and see results immediately.</p>
+      <br>
+    </div>
+<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+
+  
+	<!-- Name -->
+  <label for="name">Name:</label>
+	<input type="text" name="name" id="name"/><br/>
+	<!-- Email field (required) -->
+  <label for="email">Email:</label>
+	 <input type="text" name="email" id="email"/><br/>
+	<!-- List token -->
+	<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+	<input type="hidden" name="campaign_token" value="zW3G0" />
+	<!-- Thank you page (optional) -->
+  <input type="hidden" name="thankyou_url" value="https://bodytypequiz.netlify.app/end.html"/>
+	<!-- <input type="hidden" name="thankyou_url" value="https://entrepreneurquiz.netlify.app/end.html"/> -->
+	<!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+	<input type="hidden" name="start_day" value="0" />
+	<!-- Subscriber button -->
+	<input class="button" type="submit" value="See Results" />
+</form>
+</div>
+</div>
+<!------------------------get response----------------->
+    </div>
+   </div>
+   </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     <!--mailchimp type secret -->
+    <script>
+      let firstTypePoints = sessionStorage.getItem("first");
+let secondTypePoints = sessionStorage.getItem("second");
+let thirdTypePoints = sessionStorage.getItem("third");
+let fourthTypePoints = sessionStorage.getItem("fourth");
+let fifthTypePoints = sessionStorage.getItem("fifth");
+let sixthTypePoints = sessionStorage.getItem("sixth");
+let seventhTypePoints = sessionStorage.getItem("seventh");
+let eighthTypePoints = sessionStorage.getItem("eighth");
+let ninthTypePoints = sessionStorage.getItem("ninth");
+let tenthTypePoints = sessionStorage.getItem("tenth");
+let eleventhTypePoints = sessionStorage.getItem("eleventh");
+     
+/*window.onload = function () {
+  let usertypehere = document.querySelector("#usertype");
+  usertypehere.style.display = "none"
+  usertypehere.innerHTML = firstTypePoints;
+  console.log(usertypehere);
+//=} */
+    </script>
+  </body>
+</html>
+
+	
